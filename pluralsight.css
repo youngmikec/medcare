@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(231, 229, 229);
+    margin: auto;
+    width: 90%;
+}
+header{
+    margin: 0px;
+}
+header nav{
+    background-color: lightblue;
+    color:rgb(5, 96, 126);
+}
+header nav ul li{
+    display: inline;
+}
+main aside{
+    background-color: rgb(117, 217, 250);
+    float: left;
+    width: 20%; 
+
+}
+li{
+    list-style-type: none;
+    font-family: cursive,Arial, Helvetica, sans-serif;
+    padding-left: 0px;
+    height: 30px;
+}
+aside{
+    color: rgb(204, 239, 253);
+    text-align: center;
+}
+article{
+    background-color: white;
+ 
+}
+img{
+    border-radius: 100%;
+    margin:auto;
+    margin-top: 30px;
+    width: 40%;
+}
+aside li:hover{
+     background-color: rgb(92, 208, 247);
+}
+footer{
+    background-color: dimgrey;
+    color: white;
+    padding-top: 30px;
+    margin-top:10px;
+}
+
+
+

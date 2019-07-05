@@ -1,0 +1,106 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>edoc</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="edoc.css">
+	<link rel="stylesheet" type="text/css" href="<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style type="text/css">
+	
+		
+	</style>
+</head>
+<body>
+	<header class="inline">
+		
+			
+				    <img src="../img/hospitallogo.png" alt="hospitallogo">
+			    
+			    
+				    <ul class="inline">
+					    <li id="signin-btn"><a href="#">sign up</a></li>
+					    <li><a href="#"><span>login</span></a></li>
+				    </ul>		
+				   
+			
+			<div id="head2" class="container">
+				<ul class="inline">
+					<li class="inline">home</li>
+					<li class="inline">dashboard</li>
+					<li class="inline">see a doctor</li>
+					<li class="inline">facilities</li>
+					<li class="inline">about us</li>
+					<li class="inline">faqs</li>
+				</ul>
+			</div>
+		</header>	
+		
+
+		<main style="background-color: lightblue;" class="container">
+			<aside style="background-color: blue; float: left; width: 30%;">
+				<ul style="display: block;">
+					<li><a href="#">home</a></li>
+					<li><a href="#">dashboard</a></li>
+					<li><a href="#">profile</a> </li>
+					<li><a href="#">departments</a> </li>
+					<li><a href="#">staffs</a> </li>
+					<li><a href="#">book a doctor</a> </li>
+					<li><a href="#">patients folders</a> </li>
+				</ul>
+			</aside>
+		    <section style="width: 70%; background-color: aqua-blue;">
+		    	<div style="box-shadow: 1px 1px 1px grey; border-top: 30px solid blue; height: 200px; width: 200px;background-color: white;">
+		    		<h2>this is the dashboard section</h2>
+		    		
+		    	</div>
+		    </section>
+		</main>
+		
+		<div id="form" class="back" style="margin-top: 150px; width: 400px; margin: auto;">
+			<form method="get" action="post" style="text-align: center; margin-bottom: 40px;">
+				<input type="text" name="name" placeholder ="name">
+				<hr>
+				<input type="email" name="user email" placeholder ="email">
+				<hr>
+				<input type="number" name="staff token" placeholder ="token">
+				<hr>
+				<input type="submit" name="mySubmitButton" value="submit" style="background-color: blue; color:lightblue; width: 40%;height:30px; border-radius:5px; border: none;">
+				<hr>
+			</form>
+
+			<form novalidate class="narrow">
+				<input type="search" id="search-text" class="form-control" placeholder="search" autofocus>
+			</form>
+
+
+			
+		</div>
+		<div>
+			#BASH FUTO HACKATHON
+			*THIS IS my first time of using markdown*
+			![GitHub Logo] (../img/hospoital img 1.jpg)
+		</div>
+		<div></div>
+	</main>
+		
+<script type="text/javascript">
+	var form = document.getElementById('form');
+	var signin-btn = document.getElementById('signin-btn');
+	signin-btn.addEventListener("click", dropSignin);
+     var display = form.style.display="none";
+
+	function dropSignin() {
+		if(display == true){
+			display = form.style.display="block";
+
+             return display;          
+	}else{
+		form.style.display="none"
+		return display;
+		}
+	}
+	console.log(display);
+</script>
+</body>
+</html>

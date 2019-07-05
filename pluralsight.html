@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>learning my html from pluralsight</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="pluralsight.css">
+        <link rel="stylesheet" type="text/css" href="C:\Users\rf\Desktop\project\pages\bootstrap.min.css.map">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>home</li>
+                    <li>dashboard</li>
+                    <li>services</li>
+                    <li>about us</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <aside>
+                <div id="profilepic" class="rounded">
+                    <img src="C:\Users\rf\Desktop\bashfuto\img\hospitallogo.png" alt="profile picture">
+                </div>
+                <ul>
+                    <li>profile</li>
+                    <li>departments</li>
+                    <li>patients</li>
+                    <li>add another user</li>
+                    <li>log out</li>
+                </ul>
+            </aside>
+            <article>
+                <h2>Things i learnt from this module</h2>
+                <ul>
+                    <li>how to add a video to a web page using the video tag</li>
+                    <li>how to add an audio to a web page using the audio tag</li>
+                    <li>the loop attribute is used to make the video or audio to play again once it has finished playing</li>
+                    <li>Control is used to display the video and audio controls like play/pause, next/previous and so on</li>
+                    <li>how you could use the data- attribute to add some data to an element tag</li>
+                    <li>i learnt how to create a shape in a canvas using the canvas tag</li>
+                    <h3>How to draw on the canvas using javascript</h3>
+                    <ul>
+                        <li>creat a canvas using the canvas tag</li>
+                        <li>pass in an id attribute to the canvas for proper identification</li>
+                        <li>create a variable in js to grab the canvas and another variable called context</li>
+                        <li>run an if statement if(canvas && canvas.getContext)</li>
+                        <li>set canvas = canvas.getContext("2d");</li>
+                        <li>use the context.beginPath() to start drawing</li>
+                        <li>next is context.moveTo(70,40) to specify the starting point in the canvas </li>
+                        <li>context.lineTo() is used to draw a line from the starting point to the point specified</li>
+                        <li>context.fill() is used to fill the shape or make the lines to form the required shape</li>
+                    </ul>
+                </ul>
+                <form>
+                    <input type="text" placeholder="name" autofocus>
+                    <input type="email" placeholder="email" required>
+                    <input type="phone" placeholder="phone">
+                    <input type="date" placeholder="date of birth">
+                    <input type="submit" value="sign up" >
+                </form>
+                <video controls loop  width="400">
+                    <source src=" C:\Users\rf\Videos\5.17- Introduction to Matter.js - The Nature of Code.mp4">
+                        <p>this browser does not support video apis</p>
+                </video>
+                <audio controls loop >
+                    <source src="C:\Users\rf\Music\2Baba_Oyi_9jaflaver.com_.mp3">
+                    <p>this  browser does support audio apis, this awesome i can actually add audio or video to my web page</p>    
+                </audio>
+
+                <!--this section is used to display how a canvas works thank you-->
+                <canvas id="canvas" width="600" height="400"></canvas>
+            </article>
+        </main>
+        <footer>
+            <h3>our services</h3>
+            <ul>
+                <li>homes services</li>
+                <li>web development</li>
+                <li>system management</li>
+                <li>professional designs</li>
+            </ul>
+        </footer>
+        <script>
+            var canvas ;
+            var context ;
+            canvas = document.getElementById("canvas");
+            if(canvas && canvas.getContext){
+                context = canvas.getContext("2d");
+                context.beginPath();
+                context.moveTo(75,40);
+                context.lineTo(75,70);
+                context.lineTo(30,70);
+                context.fill();
+
+                context.lineWidth=1;
+                context.beginPath(); 
+                context.arc(190,
+                    190,
+                    120,
+                    0,
+                    Math.PI * 2,
+                    true
+                    
+
+                );
+                context.fill();
+            }
+        </script>
+    </body>
+</html>
